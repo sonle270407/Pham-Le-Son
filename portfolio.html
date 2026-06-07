@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio - Phạm Lê Sơn</title>
+  <style>
+    /* Reset */
+    * { margin:0; padding:0; box-sizing:border-box; }
+
+    body { font-family: 'Segoe UI', Arial, sans-serif; background:#eef2f7; color:#333; line-height:1.6; }
+
+    header {
+      background: linear-gradient(135deg, #2c7be5, #1b4f9c);
+      color:white; padding:60px 20px; text-align:center;
+    }
+    header h1 { font-size:3em; margin-bottom:10px; }
+    header p { font-size:1.2em; }
+
+    nav {
+      background:#fff; box-shadow:0 2px 5px rgba(0,0,0,0.1);
+      display:flex; justify-content:center; padding:15px;
+      position:sticky; top:0; z-index:1000;
+    }
+    nav a {
+      color:#2c7be5; margin:0 20px; text-decoration:none; font-weight:bold;
+      transition:color 0.3s;
+    }
+    nav a:hover { color:#1b4f9c; }
+
+    section { padding:50px 20px; max-width:1100px; margin:auto; }
+
+    h2 { color:#1b4f9c; margin-bottom:25px; font-size:2em; }
+
+    .card {
+      background:white; border-radius:12px; padding:25px; margin-bottom:30px;
+      box-shadow:0 4px 15px rgba(0,0,0,0.1); transition:transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover { transform:translateY(-5px); box-shadow:0 6px 20px rgba(0,0,0,0.15); }
+
+    .card h3 { margin-bottom:15px; color:#2c7be5; font-size:1.4em; }
+
+    .download-btn {
+      display:inline-block; padding:12px 20px; background:#2c7be5;
+      color:white; border-radius:6px; text-decoration:none; font-weight:bold;
+      transition:background 0.3s, transform 0.2s;
+    }
+    .download-btn:hover { background:#1b4f9c; transform:scale(1.05); }
+
+    footer {
+      background:#1b4f9c; color:white; text-align:center; padding:25px; margin-top:40px;
+    }
+
+    /* Grid layout cho bài tập */
+    .grid {
+      display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+      gap:20px;
+    }
+
+    /* Responsive */
+    @media(max-width:768px){
+      header h1 { font-size:2.2em; }
+      nav a { margin:0 10px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Portfolio Cá nhân</h1>
+    <p>Phạm Lê Sơn - MSV: 25023882</p>
+  </header>
+
+  <nav>
+    <a href="#gioithieu">Giới thiệu</a>
+    <a href="#baitap">Bài tập</a>
+    <a href="#tongket">Tổng kết</a>
+    <a href="#lienhe">Liên hệ</a>
+  </nav>
+
+  <section id="gioithieu">
+    <div class="card">
+      <h2>Giới thiệu</h2>
+      <p>Xin chào, tôi là <b>Phạm Lê Sơn</b>, sinh viên ngành Thiết kế công nghiệp và Đồ họa. 
+      Đây là Portfolio cá nhân nhằm tổng hợp các bài tập đã thực hiện trong học phần, thể hiện kỹ năng số và khả năng ứng dụng AI trong học tập.</p>
+    </div>
+  </section>
+
+  <section id="baitap">
+    <h2>Bài tập đã hoàn thành</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>📂 Bài 1 – Quản lý tệp và thư mục</h3>
+        <a class="download-btn" href="https://docs.google.com/document/d/1jb1WMMJ4GDHbuMoiIXEJi-fHTnkf8f3D/edit" target="_blank">Bài 1</a>
+      </div>
+      <div class="card">
+        <h3>🔍 Bài 2 – Tìm kiếm & đánh giá thông tin học thuật</h3>
+        <a class="download-btn" href="https://docs.google.com/document/d/1UOc2d9KrNF1cMOMog1iNP5L4Za3fmV3_/edit" target="_blank">Bài 2</a>
+      </div>
+      <div class="card">
+        <h3>💡 Bài 3 – Viết Prompt hiệu quả</h3>
+        <a class="download-btn" href="https://docs.google.com/document/d/1VuoEQksfcUXP44Cl8Cd8f85jpt4nXfDP/edit" target="_blank">Bài 3</a>
+      </div>
+      <div class="card">
+        <h3>🤝 Bài 4 – Hợp tác trực tuyến</h3>
+        <a class="download-btn" href="https://docs.google.com/document/d/19sgoq1WQgOBbJXvyBUHDGWt0xz7VMa6F/edit" target="_blank">Bài 4</a>
+      </div>
+      <div class="card">
+        <h3>🎨 Bài 5 – Sáng tạo nội dung với AI</h3>
+        <a class="download-btn" href="https://docs.google.com/document/d/1MTXNJEgl4m1FU_gjNwAwjLoPRpHbhpUy/edit" target="_blank">Bài 5</a>
+      </div>
+      <div class="card">
+        <h3>⚖️ Bài 6 – Nguyên tắc sử dụng AI có trách nhiệm</h3>
+        <a class="download-btn" href="https://docs.google.com/document/d/1-hndeEu56HG1piu9HDFzesfaJC1LbS47/edit" target="_blank">Bài 6</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="tongket">
+    <div class="card">
+      <h2>Tổng kết</h2>
+      <p>Qua quá trình thực hiện Portfolio, tôi đã rèn luyện được nhiều kỹ năng quan trọng: 
+      quản lý tệp, tìm kiếm thông tin học thuật, viết prompt hiệu quả, hợp tác trực tuyến, 
+      sáng tạo nội dung với AI và sử dụng AI có trách nhiệm. 
+      Đây là trải nghiệm giúp tôi hiểu rõ hơn về việc kết hợp công nghệ số với học tập, 
+      đồng thời nâng cao khả năng tư duy độc lập và sáng tạo.</p>
+    </div>
+  </section>
+
+  <section id="lienhe">
+    <div class="card">
+      <h2>Liên hệ</h2>
+      <p>Email cá nhân: <a href="mailto:sonle270407@gmail.com">sonle270407@gmail.com</a></p>
+      <p>Email sinh viên: <a href="mailto:25023882@vnu.edu.vn">25023882@vnu.edu.vn</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 - Portfolio của Phạm Lê Sơn</p>
+  </footer>
+</body>
+</html>
